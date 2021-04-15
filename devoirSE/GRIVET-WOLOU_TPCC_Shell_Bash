@@ -1,0 +1,37 @@
+EXERCICE 1 :
+
+#!/bin/bash 
+ echo `ls -R $1`
+
+EXERCICE 2 :
+1)
+
+grep 'x$' dico_francais-utf8.txt | egrep "z{1,3}"
+
+résultat : 
+
+azoteux
+gazeux
+zigzagx ( ce que nous avons rajouté )
+
+2)
+
+grep " en " dico_francais-utf8.txt
+
+résultat :
+
+redacteur en chef
+agir en maître
+cheveux en brosse
+colonne en bois
+plus en plus
+rédacteur en chef
+
+3)
+
+grep "^[A-Z]" dico_francais-utf8.txt | grep '[.:,;!?]'
+
+résultat :
+ 
+U.S.A.
+
